@@ -17,7 +17,7 @@ a {
     padding: 0;
     box-sizing: border-box;
 }
-.row {
+.row , .navbar .row .nav-left {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -62,4 +62,7 @@ a {
 .top-navbar span {
     text-transform: uppercase;
 }
-
+.navbar .row .nav-left {
+    display: flex;
+}
+/* end navbar css */
