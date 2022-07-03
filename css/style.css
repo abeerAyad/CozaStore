@@ -1,0 +1,68 @@
+/* puplic style */
+a {
+    font-family:'Poppins', sans-serif;
+    font-weight: 500;
+}
+:root {
+    --bg-dark:#222;
+    --bg-primary:#717fe0;
+    --bg-danger:#f74877;
+    --text-color:#6c7ae0;
+    --text-dark:#333;
+    --text-secondary:#b2b2b2;
+    --text-info:#555;
+}
+*,::after,::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.row , .navbar .row .nav-left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+ /* start top-navber  */
+.top-navbar {
+    background-color: var(--bg-dark);
+    color: var(--text-secondary);
+    font-family:'Poppins', sans-serif;
+    font-weight: 400;
+}
+.top-navbar p {
+    font-size: 12px;
+}
+.top-navbar .list {
+    display: flex;
+    gap: 15px;
+}
+.top-navbar .list .item .link {
+    color: var(--text-secondary);
+    text-transform: capitalize;
+    border-left: 1px solid var(--text-secondary);
+    padding:10px  15px;
+    display: inline-block;
+    font-size: 12px;
+
+}
+.top-navbar .list .item:last-child .link {
+    border-right: 1px solid var(--text-secondary);
+}
+.top-navbar span {
+    text-transform: uppercase;
+}
+.navbar .row .nav-left {
+    display: flex;
+}
+/* end navbar css */
