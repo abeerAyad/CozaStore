@@ -348,4 +348,138 @@ a {
 /* end banner css */
 
 
+/* start products css  */
+.products {
+    font-family:'Poppins', sans-serif;
+
+}
+.products h2 {
+    text-transform: uppercase;
+    font-size: 40px;
+}
+.products .control {
+    margin: 15px 0;
+}
+.products .control .list {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.products .control .list .item {
+    color: #888;
+    text-transform: capitalize;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+.products .control .list .item.active {
+    text-decoration: underline;
+    color: var(--text-dark);
+}
+
+.products .control .list .item:hover {
+    text-decoration: underline;
+    color: var(--text-dark);
+
+}
+.products .control .btns {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.products .control .btns a {
+    text-transform: capitalize;
+    font-size: 14px;
+    color: #888;
+    border: 1px solid var(--text-secondary);
+    padding: 5px 10px;
+    border-radius: 3px;
+    transition: .3s ease-in-out;
+
+}
+.products .control .btns a i {
+    margin-right: 15px;
+}
+
+.products .control .btns a:hover {
+    background-color: var(--bg-primary);
+    color: #fff;
+    border-color: var(--bg-primary);
+}
+.products .items {
+    flex-wrap: wrap;
+    margin-top: 70px;
+
+}
+.products .items .item {
+    width: 23%;
+}
+.products .items .item  .img {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+
+}
+.products .items .item  .img a {
+    background-color: #fff;
+    color: var(--text-dark);
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: max-content;
+    padding: 5px 10px;
+    font-size: 13px;
+    transition: .3s ease-in-out;
+
+}
+.products .items .item  .img:hover a {
+    bottom: 30px;
+}
+.products .items .item  .img a:hover {
+    background-color: var(--bg-dark);
+    color: #fff;
+}
+.products .items .item  .img img {
+    width: 100%;
+
+}
+.products .items .item .description  {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #888;
+    margin: 5px 0;
+    font-family:'Poppins', sans-serif;
+
+
+}
+.products .items .item span  {
+    font-size: 13px;
+    color: #888;
+    font-family:'Poppins', sans-serif;
+}
+
+.products .items .item .description p:hover,
+.products .items .item i:hover {
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    color: var(--bg-primary);
+}
+.products .items .item .description i:hover {
+    font-weight: 600;
+}
+.products .load {
+    text-align: center;
+    margin: 70px 0;
+}
+.products .load .btn {
+    background-color: #e6e6e6;
+    color: var(--text-dark);
+}
+.products .load .btn:hover {
+    background-color: var(--bg-dark);
+    color: #fff;
+}
+
+/* end products css  */
 

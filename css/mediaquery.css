@@ -92,4 +92,29 @@
         justify-content: center;
     }
 
+    .products .items .item {
+        width: 80%;
+        margin: auto;
+    }
+    .products .control  {
+        gap: 20px;
+    }
+    .products .control  {
+        flex-wrap: wrap;
+    }
+
+    .products .control .list .item {
+        font-size: 13px;
+
+    }
+    .products .control .btns a {
+        font-size: 12px;
+    }
 }
+
+@media screen and (min-width:768px) and (max-width:991px) {
+    .products .items .item {
+        width: 40%;
+    }
+}
+
