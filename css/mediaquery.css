@@ -1,9 +1,30 @@
 @media screen and (max-width:767px) {
+.container {
+    width: 95%;
+}
+    .top-navbar {
+        position: absolute;
+        top: 68px;
+        left: 0;
+        right: 0;
+        padding: 10px 0;
+    }
+    .top-navbar .row {
+        display: unset;
+    }
+    .top-navbar .list  {
+        gap: 5px ;
+        margin-top: 5px ;
+        border-top: 1px solid var(--text-secondary);
+    }
+    .top-navbar .list .item .link {
+        padding: 0 5px;
+    }
     .navbar {
         top:0;
-        padding: 25px 30px 25px 0 ;
-        left: 40px;
-        right: 20px;
+        padding: 25px 42px 25px 30px;
+        left: 0px;
+        right: 0px;
     }
     .navbar .nav-left .logo {
         width: 70%;
@@ -12,7 +33,7 @@
         position:absolute;
         background-color: var(--bg-primary);
         display: unset;
-        top: 50px;
+        top: 136px;
         left: 0;
         right: 0;
         padding: 20px;
@@ -48,10 +69,9 @@
     }
     .btn-toggle { 
         display: block;
+        right: 15px;
     }
-    .top-navbar {
-        display: none;
-    }
+    
     .navbar #toggle:checked + .list  {
         opacity: 1;
         visibility: visible;
