@@ -87,4 +87,9 @@
         font-size: 25px;
     }
 
+    .banner .row {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
 }

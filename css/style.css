@@ -7,6 +7,7 @@ a {
     --bg-dark:#222;
     --bg-primary:#717fe0;
     --bg-danger:#f74877;
+    --bg-primary-hover:rgba(103,117,214,0.9);
     --text-color:#6c7ae0;
     --text-dark:#333;
     --text-secondary:#b2b2b2;
@@ -21,6 +22,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 25px;
 }
 .container {
     width: 85%;
@@ -252,4 +254,98 @@ a {
 /* end navbar css */
 
 /* end Header css */
+
+/* start banner css */
+.banner {
+    margin: 100px 0;
+}
+.banner .banner-item {
+    border: 1px solid var(--text-secondary);
+    border-radius: 1px;
+    position: relative;
+    font-family:'Poppins', sans-serif;
+
+}
+.banner .banner-item .banner-content {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+
+}
+.banner .banner-item .banner-content h3 {
+    text-transform: capitalize;
+    transition: .4s   ;
+    font-size: 28px;
+    line-height: 1.1;
+    color: var(--text-dark);
+
+}
+.banner .banner-item .banner-content p {
+    text-transform: capitalize;
+    color: var(--text-info);
+    transition: .4s  ;
+    font-size: 14px;
+    line-height: 1.7;
+
+
+}
+
+.banner .banner-item .banner-img {
+    height: 300px;
+}
+.banner .banner-item .banner-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.banner .banner-item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--bg-primary-hover);
+    z-index: 0;
+    opacity: 0;
+    visibility: hidden;
+
+}
+
+.banner .banner-item .overlay a {
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+    overflow: hidden;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    text-transform: uppercase;
+    transform: scale(0);
+    transition: .5s ease-in-out;
+}
+
+.banner .banner-item .overlay a span{
+    transform: translateY(40px);
+    display: inline-block;
+    transition: 1s .2s ease-in-out ;
+}
+.banner .banner-item:hover .overlay {
+   opacity: 1;
+   visibility: visible;
+}
+.banner .banner-item:hover .banner-content h3,
+.banner .banner-item:hover .banner-content p {
+    color: #fff;
+}
+
+.banner .banner-item :hover.overlay a {
+    transform: scale(1);
+}
+.banner .banner-item :hover.overlay a span{
+    transform: translateY(0);
+}
+
+/* end banner css */
+
+
 
