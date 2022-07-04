@@ -110,11 +110,19 @@
     .products .control .btns a {
         font-size: 12px;
     }
+
+footer .footer-list {
+    flex-direction: column;
+}
+footer .footer-list .list h3  {
+    margin-top: 10px;
+}
+
 }
 
 @media screen and (min-width:768px) and (max-width:991px) {
     .products .items .item {
-        width: 40%;
+        width: 45%;
     }
 }
 
