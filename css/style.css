@@ -482,4 +482,85 @@ a {
 }
 
 /* end products css  */
+/* start footer css */
+footer {
+    background-color: var(--bg-dark);
+    padding: 30px 0;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 400;
+}
+footer .footer-list {
+    display: flex;
+}
+footer .footer-list .list {
+    width: 25%;
+}
+
+footer .footer-list .list h3 {
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+footer .footer-list .list ul .item   {
+    padding: 5px 0;
+}
+footer .footer-list .list ul .item  .link  {
+    text-transform: capitalize;
+
+}
+footer .footer-list .list ul .item  .link , footer .list .get-info {
+    color: var(--text-secondary);
+    font-size: 13px;
+}
+
+footer .list .get-info .social-media {
+    margin-top: 60px;
+    display: flex;
+    gap: 20px;
+    
+}
+footer .list .get-info .social-media i {
+   
+    transition: .8s ease-in-out;
+
+}
+footer .list .get-info .social-media i:hover {
+    color: var(--bg-primary);
+}
+footer .new .get-info hr {
+    margin: 10px 0;
+    border-color: rgba(204,204,204,.1);
+}
+footer .get-info .btn-footer {
+    font-size: 15px;
+}
+
+
+footer .get-info .btn-footer:hover {
+    background-color: #fff;
+    color: var(--bg-primary);
+}
+footer  .pay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+footer .container .pay img {
+    margin: 5px;
+}
+footer .copyRight {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 13px;
+    color: var(--text-secondary);
+}
+footer .copyRight p span {
+    color: var(--bg-primary);
+    font-size: 16px;
+}
+/* end footer css */
+
 
