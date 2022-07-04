@@ -25,10 +25,13 @@ arrow.onclick = () => {
 //Change background navbar
 window.addEventListener('scroll',(e) => {
     if(scrollY >= 100) {       
-        nav.style.backgroundColor='white';
+        nav.style.backgroundColor='#fff';
+        nav.style.borderBottom ='1px solid #717fe0';
+
         nav.style.top='0';
     } else {
         nav.style.removeProperty("background-color");
+        nav.style.removeProperty("border-bottom");
         nav.style.top='40px';
     }
 })
