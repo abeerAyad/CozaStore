@@ -34,3 +34,18 @@ window.addEventListener('scroll',(e) => {
         nav.style.top='40px';
     }
 })
+
+let close = document.querySelector('.close');
+let search = document.querySelector('.search');
+let searchOverlay = document.querySelector('.search-overlay');
+
+search.addEventListener('click',showPopup);
+function showPopup() {
+    searchOverlay.style.top='0';
+}
+
+close.addEventListener('click',closePopup);
+function closePopup() {
+    searchOverlay.style.top='-100%'
+
+}
