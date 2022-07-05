@@ -69,9 +69,19 @@ let outerPopup = document.querySelector('.outer-popup')
 let check = document.querySelector('.check');
 
 fullHeart.forEach(element => {
-        element.addEventListener('click',()=>{
+        element.addEventListener('click',() => {
         element.style.fontWeight='600'; 
-        outerPopup.style.transform ='scale(1)';
+            // outerPopup.style.transform ='scale(1)';
+            // console.log((element.getAttribute('style') === 'font-weight=600'))
+            //         if((element.getAttribute('style') === 'font-weight=600')) {
+            //         outerPopup.style.display ='none';
+
+            //         } else {
+            //             outerPopup.style.transform ='scale(1)';
+
+            //         }
+                        outerPopup.style.transform ='scale(1)';
+
         check.style.transform='scale(1)'
     });
 })
@@ -81,4 +91,16 @@ ok.addEventListener('click',() => {
     outerPopup.style.transform='scale(0)';
 })
 
+
+// Filter 
+let filter = document.querySelector('.arrow-filter');
+let divFilter = document.querySelector('.filter');
+let arrowFilter = document.querySelector('.arrow-filter .arrow-down');
+console.log(arrowFilter)
+
+
+filter.onclick = () => {
+    divFilter.classList.toggle('toggle'); 
+    arrowFilter.classList.toggle('toggle');
+}
 

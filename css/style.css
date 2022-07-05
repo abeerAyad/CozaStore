@@ -813,3 +813,133 @@ footer .copyRight p span {
     bottom: 20px;
     right: 20px;
 }
+
+/* Filter css */
+.filter {
+    background-color: #f2f2f2;
+    padding: 30px 0;
+    font-family: 'Poppins',sans-serif;
+    transition: .4s ease-in-out;
+   display: none;
+}
+.toggle {
+    transition: .4s ease-in-out;
+
+    display: block;
+
+}
+.filter .filter-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    transition: .4s ease-in-out;
+
+}
+.filter .list h3 {
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 500;
+    margin-bottom: 15px;
+
+}
+.filter .list .item {
+    margin-bottom: 8px;
+}
+.filter .list .item .link {
+    font-family: 'Poppins',sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #aaa;
+    border-bottom: 1px solid transparent;
+    transition: .3s ease-in-out;
+}
+.filter .list .item:hover .link {
+    border-bottom-color: #6c7ae0;
+    color: #6c7ae0;
+}
+.filter .list .item .active-link {
+    border-bottom-color: #6c7ae0;
+    color: #6c7ae0;
+}
+.filter .color ul .item  {
+    display: flex;
+    align-items: center;
+}
+.filter .color ul .item div {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+.filter .color ul .item:first-child div {
+    background-color: black;
+}
+.filter .color ul .item:nth-child(2) div {
+    background-color: blue;
+}
+
+.filter .color ul .item:nth-child(3) div {
+    background-color: gray;
+}
+
+.filter .color ul .item:nth-child(4) div {
+    background-color: green;
+}
+
+.filter .color ul .item:nth-child(5) div {
+    background-color: red;
+}
+
+.filter .color ul .item:nth-child(6) div {
+    background-color: white;
+}
+
+
+
+.filter .color ul .item .link {
+    margin-left: 8px;
+}
+
+.filter .tags {
+    width: 22%;
+}
+
+.filter .tags ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.filter .tags .item {
+    margin-bottom: 20px;
+    
+}
+.filter .tags .item .link {
+    border: 1px solid #ccc;
+    padding: 5px 20px;
+    border-radius: 15px;
+    transition: .3s ease-in-out;
+}
+.filter .tags .item:hover .link {
+    color: #6c7ae0;
+    border-color: #6c7ae0;
+}
+.btns a {
+    /* pointer-events: none; */
+
+}
+.arrow-filter {
+    position: relative;
+    
+}
+.arrow-filter .arrow-down{
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+    border-width: 12px;
+    border-style: solid;
+    border-color:   #f2f2f2 transparent   transparent transparent;
+    display: none;
+}
