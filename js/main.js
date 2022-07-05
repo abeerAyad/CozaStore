@@ -100,7 +100,8 @@ console.log(arrowFilter)
 
 
 filter.onclick = () => {
-    divFilter.classList.toggle('toggle'); 
+    divFilter.classList.toggle('toggle');
+    
     arrowFilter.classList.toggle('toggle');
 }
 

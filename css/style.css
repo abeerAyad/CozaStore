@@ -470,9 +470,7 @@ a {
     transition: .3s ease-in-out;
     color: var(--bg-primary);
 }
-/* .products .items .item .description i:hover {
-    font-weight: 600;
-} */
+
 .products .load {
     text-align: center;
     margin: 70px 0;
@@ -610,7 +608,7 @@ footer .copyRight p span {
     font-size: 40px;
 
 }
-.search-overlay form {
+ form {
     position: relative;
 
 }
@@ -626,7 +624,7 @@ footer .copyRight p span {
 
 
 }
-.search-overlay form i {
+ form i {
     position: absolute;
     left: 15px;
     right: 0;
@@ -823,8 +821,6 @@ footer .copyRight p span {
    display: none;
 }
 .toggle {
-    transition: .4s ease-in-out;
-
     display: block;
 
 }
@@ -832,7 +828,6 @@ footer .copyRight p span {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    transition: .4s ease-in-out;
 
 }
 .filter .list h3 {
@@ -924,10 +919,7 @@ footer .copyRight p span {
     color: #6c7ae0;
     border-color: #6c7ae0;
 }
-.btns a {
-    /* pointer-events: none; */
 
-}
 .arrow-filter {
     position: relative;
     
@@ -942,4 +934,19 @@ footer .copyRight p span {
     border-style: solid;
     border-color:   #f2f2f2 transparent   transparent transparent;
     display: none;
+}
+
+.search-product {
+    width: 100%;
+    margin-top: 40px;
+}
+.search-product form input {
+    width: 100%;
+    padding: 15px 30px;
+    font-size: 13px;
+
+}
+.search-product form i {
+    font-size: 13px;
+    padding-top: 5px;
 }
