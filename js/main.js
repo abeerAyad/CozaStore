@@ -63,3 +63,22 @@ function showCart() {
 function hideCart() {
     cart.style.right='-100%';
 }
+
+let fullHeart = document.querySelectorAll('.description i');
+let outerPopup = document.querySelector('.outer-popup')
+let check = document.querySelector('.check');
+
+fullHeart.forEach(element => {
+        element.addEventListener('click',()=>{
+        element.style.fontWeight='600'; 
+        outerPopup.style.transform ='scale(1)';
+        check.style.transform='scale(1)'
+    });
+})
+
+let ok = document.querySelector('button');
+ok.addEventListener('click',() => {
+    outerPopup.style.transform='scale(0)';
+})
+
+
