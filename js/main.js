@@ -35,6 +35,8 @@ window.addEventListener('scroll',(e) => {
     }
 })
 
+
+// Show Popup Search
 let close = document.querySelector('.close');
 let search = document.querySelector('.search');
 let searchOverlay = document.querySelector('.search-overlay');
@@ -47,5 +49,17 @@ function showPopup() {
 close.addEventListener('click',closePopup);
 function closePopup() {
     searchOverlay.style.top='-100%'
+}
+//Show Cart
+let cartShopping = document.querySelector('.cart-shopping');
+let closeCart = document.querySelector('.close-cart');
+let cart = document.querySelector('.cart')
+cartShopping.addEventListener('click',showCart);
 
+closeCart.addEventListener('click',hideCart);
+function showCart() {
+    cart.style.right='0'
+}
+function hideCart() {
+    cart.style.right='-100%';
 }
