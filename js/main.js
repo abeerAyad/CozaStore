@@ -135,3 +135,16 @@ viewCart.forEach(ele => {
 closeCartDetails.addEventListener('click',() => {
 overlayModal.style.display='none'
 })
+
+// Show Details  Products img
+let bigImg = document.querySelector('.full-img');
+let image =bigImg.getAttribute('src')
+let gallary = document.querySelectorAll('.small-img img');
+gallary.forEach(item => {
+    item.addEventListener('click',(e) => {
+        letshowImg =e.target.getAttribute('src');
+        bigImg.setAttribute('src',letshowImg)
+        
+    })
+})
+
