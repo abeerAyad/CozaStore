@@ -70,20 +70,11 @@ let check = document.querySelector('.check');
 
 fullHeart.forEach(element => {
         element.addEventListener('click',() => {
-        element.style.fontWeight='600'; 
-            // outerPopup.style.transform ='scale(1)';
-            // console.log((element.getAttribute('style') === 'font-weight=600'))
-            //         if((element.getAttribute('style') === 'font-weight=600')) {
-            //         outerPopup.style.display ='none';
-
-            //         } else {
-            //             outerPopup.style.transform ='scale(1)';
-
-            //         }
-                        outerPopup.style.transform ='scale(1)';
-
-        check.style.transform='scale(1)'
+            element.style.fontWeight='600'; 
+            outerPopup.style.transform ='scale(1)';
+            check.style.transform='scale(1)'
     });
+     
 })
 
 let ok = document.querySelector('button');
@@ -105,3 +96,42 @@ filter.onclick = () => {
     arrowFilter.classList.toggle('toggle');
 }
 
+
+// Counter
+let counter =0;
+let counts = Array.from(document.querySelectorAll('.count'));
+let numCount = document.querySelector('.number').innerHTML;
+numCount=counter;
+counts.forEach(count => {
+    count.addEventListener('click',(e)=>{
+        let countType =e.target.classList[0];
+        switch (countType) {
+            case 'plus':
+                counter++;
+            break;
+            case'minus': 
+                if(counter === 0) {
+                    e.preventDefault()
+                } else {
+                counter--;
+                }
+            break;
+        }
+        document.querySelector('.number').innerHTML=counter;
+    })
+})
+
+// close product cart details 
+let closeCartDetails = document.querySelector('.popup-cart-details .close');
+let overlayModal = document.querySelector('.popup-cart-details');
+let viewCart = document.querySelectorAll('.img  a');
+console.log(viewCart)
+viewCart.forEach(ele => {
+    ele.addEventListener('click',() => {
+        overlayModal.style.display='block';
+    })
+})
+
+closeCartDetails.addEventListener('click',() => {
+overlayModal.style.display='none'
+})
