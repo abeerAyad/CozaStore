@@ -90,11 +90,11 @@ let arrowFilter = document.querySelector('.arrow-filter .arrow-down');
 console.log(arrowFilter)
 
 
-filter.onclick = () => {
-    divFilter.classList.toggle('toggle');
+// filter.onclick = () => {
+//     divFilter.classList.toggle('toggle');
     
-    arrowFilter.classList.toggle('toggle');
-}
+//     arrowFilter.classList.toggle('toggle');
+// }
 
 
 // Counter
@@ -148,3 +148,22 @@ gallary.forEach(item => {
     })
 })
 
+let searchProducts = document.querySelector('.search-products');
+let divSearchProduct = document.querySelector('.search-product')
+searchProducts.addEventListener('click',() => {
+    divSearchProduct.classList.toggle('toggle')
+
+})
+
+const tabItem = document.querySelectorAll('.tab-item');
+let tabContent = document.querySelectorAll('.tab-content')
+console.log(tabItem)
+tabItem.forEach(item => item.addEventListener('click',selectContent) );
+function selectContent() {
+    removeShow()
+    tabContentItem = document.querySelector(`.${this.id}-content`);
+    tabContentItem.classList.add('show')
+}
+function removeShow() {
+    tabContent.forEach(remEle => remEle.classList.remove('show'))  
+}
